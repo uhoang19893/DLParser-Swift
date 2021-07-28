@@ -13,7 +13,8 @@ import Foundation
     that is AAMVA compliant. The class is responsible for parsing data
     on the detected version number.
 */
-public class AAMVAParser {
+@objcMembers
+public class AAMVAParser: NSObject {
     
     // MARK: - Properties
 
