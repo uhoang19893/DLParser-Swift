@@ -11,24 +11,25 @@ import Foundation
     A driver license model for the information described in the AAMVA PDF417 standards. This model
     only captures the subfile 'DL' from the PDF417 data.
  */
-public struct DriverLicense: Equatable {
+@objcMembers
+public class DriverLicense: NSObject {
     
     // MARK: - Names
     
     /// The license holder's first name, if any.
-    public var firstName: String?
+    @objc public var firstName: String?
     
     /// The license holder's middle names.
-    public var middleNames = [String]()
+    @objc public var middleNames = [String]()
     
     /// The license holder's last name, if any.
-    public var lastName: String?
+    @objc public var lastName: String?
     
     /// The license holder's alias of the given name, if any.
-    public var givenNameAlias: String?
+    @objc public var givenNameAlias: String?
     
     /// The license holder's alias of the last name, if any.
-    public var lastNameAlias: String?
+    @objc public var lastNameAlias: String?
     
     /// The license holder's alias of the suffix, if any.
     public var suffixAlias: String?
@@ -49,13 +50,13 @@ public struct DriverLicense: Equatable {
     // MARK: - Dates
     
     /// The expiration date of the license, if any.
-    public var expirationDate: Date?
+    @objc public var expirationDate: Date?
     
     /// The issue date of the license, if any.
-    public var issueDate: Date?
+    @objc public var issueDate: Date?
     
     /// The license holder's birth date, if any.
-    public var birthdate: Date?
+    @objc public var birthdate: Date?
     
     /// The hazmat expiration date of the license, if any.
     public var hazmatExpirationDate: Date?
