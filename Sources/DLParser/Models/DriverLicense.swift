@@ -177,7 +177,7 @@ public class DriverLicense: NSObject {
     
     
     /// Creates an empty driver license.
-    public init() {}
+    public override init() {}
 }
 
 
